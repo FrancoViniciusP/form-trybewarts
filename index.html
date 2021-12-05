@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybewarts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/trybewarts-header-logo.svg" alt="logo trybewarts" class="trybewarts-header-logo">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form class='trybewarts-login' action="">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="senha" placeholder="Senha">
+            <button id="login" >Entrar</button>
+        </form>
+    </header>
+    <main>
+        <form id="evaluation-form" action=""> 
+            <h1>Formulário de avaliação</h1>
+            <div id="full-name">
+                <input id="input-name" type="text" placeholder="Nome">
+                <input id="input-lastname" type="text" placeholder="Sobrenome">
+            </div>
+            <div id="email-e-casa">
+                <input id="input-email" type="text" placeholder="Email">
+                <label for=""> Casa:
+                    <select name="houses" id="house"> 
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </label>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="second-part">
+                <div>
+                    <label id="label-family">Qual sua família?</label>
+                    <br>
+                    <input type="radio" name="family" value="Frontend" id="front">
+                    <label for="front">Frontend</label>
+                    <br>
+                    <input type="radio" name="family" value="Backend" id="back">
+                    <label for="back">Backend</label>
+                    <br>
+                    <input type="radio" name="family" value="FullStack" id="full">
+                    <label for="full">FullStack</label>
+                </div>
+                <div id="contents">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <br>
+                    <label for="hofs">
+                        <input class="subject" type="checkbox" name="" id="hofs" value="HoFs"> HoFs
+                    </label>
+                    <label for="jest">
+                        <input class="subject" type="checkbox" name="" id="jest" value="Jest"> Jest
+                    </label>
+                    <label for="pr">
+                        <input class="subject" type="checkbox" name="" id="pr" value="Promises"> Promises
+                    </label>
+                    <label for="react">
+                        <input class="subject" type="checkbox" name="" id="react" value="React"> React 
+                    </label>
+                    <label for="sql">
+                        <input class="subject" type="checkbox" name="" id="sql" value="SQL"> SQL
+                    </label>
+                    <label for="py">
+                        <input class="subject" type="checkbox" name="" id="py" value="Python"> Python
+                    </label>
+                </div>   
+            </div>  
+            <hr>
+            <br>
+            <div id='rate'>
+                <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="1"> 1
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="2"> 2
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="3"> 3
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="4"> 4
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="5"> 5
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="6"> 6
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="7"> 7
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="8"> 8
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="9"> 9
+                </label>
+                <label for="">
+                    <input type="radio" name="rate" id="" value="10"> 10
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="" class="textarea">Deixe seu comentário:</label>
+                <textarea name="" id="textarea" cols="80" rows="10" maxlength="500"></textarea>
+                <p id="counter">500</p>
+            </div>
+            <br>
+            <div>
+                <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+                    <input type="checkbox" name="" id="agreement">
+                </label>
+            </div>
+            <br>
+            <div>
+               <button type="submit" id="submit-btn" disabled>Enviar</button> 
+            </div>            
+        </form>
+        <aside>
+           <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="logo trybewarts">  
+        </aside>
+    </main>
+    <footer>Direitos reservados à Trybewarts©</footer>
+    <script src="script.js"></script>
+</body>
+</html>
